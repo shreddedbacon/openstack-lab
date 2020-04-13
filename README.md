@@ -42,6 +42,7 @@ This isn't really a guide, but more a reference to my own OpenStack lab and how 
             * [Octavia Flavor](#octavia-flavor)
          * [Octavia](#octavia)
       * [Finish](#finish)
+      * [References](#references)
 
 ## Hardware Considerations
 My lab consists of the following for the purpose of this reference:
@@ -297,3 +298,8 @@ You can deploy just octavia again once configuration options are changes using
 
 ## Finish
 You're done, you should be able to access horizon now by visiting [http://10.10.10.250/](http://10.10.10.250/) (or whatever IP you configured as your `kolla_internal_vip_address` in `kolla-ansible/overrides.yml` file.
+
+## References
+The following were used to help in the initial deployment of my openstack lab
+*[Kolla-ansible quickstart](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)
+*[http://www.panticz.de/openstack/octavia](http://www.panticz.de/openstack/octavia)
