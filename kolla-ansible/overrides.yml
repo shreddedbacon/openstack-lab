@@ -1,0 +1,48 @@
+---
+# These are overrides of the globals
+# use `<docker run> kolla-ansible -i multinode --extra-vars=@overrides.yml <command>`
+
+# limited resources, so only use 1 worker
+openstack_service_workers: 1
+change_selinux: True
+selinux_state: "disabled"
+
+# openstack rocky
+kolla_base_distro: "centos"
+kolla_install_type: "binary"
+openstack_release: "rocky"
+
+# vip address
+kolla_internal_vip_address: "10.10.10.250"
+
+# network interfaces
+network_interface: "bond0"
+neutron_external_interface: "bond1"
+
+# tenant network types to use
+neutron_tenant_network_types: "vlan"
+
+enable_barbican: "yes"
+enable_chrony: "yes"
+enable_cinder: "yes"
+enable_cinder_backup: "yes"
+enable_cinder_backend_nfs: "yes"
+enable_fluentd: "yes"
+enable_haproxy: "yes"
+enable_horizon: "yes"
+enable_manila: "yes"
+enable_horizon_manila: "yes"
+enable_horizon_neutron_lbaas: "no"
+enable_manila_backend_generic: "yes"
+enable_neutron_dvr: "yes"
+enable_neutron_lbaas: "yes"
+enable_nova_ssh: "yes"
+
+# there is additional steps required to configure octavia after the initial deploy
+enable_octavia: "yes"
+enable_horizon_octavia: "yes"
+
+cinder_backup_driver: "nfs"
+cinder_backup_share: "10.10.10.200:/volume1/openstack-backups"
+cinder_backup_mount_options_nfs: "async"
+    

@@ -1,0 +1,12 @@
+FROM ubuntu:18.04
+
+RUN apt-get update && \
+    apt-get -y install python-pip openssh-client \
+    && rm -rf /var/lib/apt/lists/*
+RUN pip install -U pip
+RUN pip install ansible
+RUN pip install kolla-ansible
+
+COPY ansible.cfg /etc/ansible/ansible.cfg
+
+WORKDIR /etc/kolla
