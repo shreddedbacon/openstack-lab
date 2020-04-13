@@ -60,7 +60,7 @@ My lab consists of the following for the purpose of this reference:
 * 1x Synology NAS
 
 ## Diagram
-> insert diagram
+[Lucid Chart](https://www.lucidchart.com/documents/view/93c11631-333f-4627-b082-18d8c5c4e657)
 
 ## Routing / IP Ranges / VLANs
 Routing should be set up with some initial networks, feel free to change your networks to be whatever you want.
