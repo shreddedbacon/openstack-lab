@@ -291,7 +291,8 @@ openstack flavor create --id octavia --disk 20 --private --ram 1024 --vcpus 2 oc
 ### Octavia
 This guide has a good runthrough on setting up octavia after initially deploying openstack
 [http://www.panticz.de/openstack/octavia](http://www.panticz.de/openstack/octavia)
-You can deploy just octavia again once configuration options are changes using
+
+You can deploy just octavia again once configuration options are changed using
 ```
 ./kolla deploy --tags octavia
 ```
