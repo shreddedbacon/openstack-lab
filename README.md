@@ -303,5 +303,5 @@ You're done, you should be able to access horizon now by visiting [http://10.10.
 ## References
 The following were used to help in the initial deployment of my openstack lab
 
-*[Kolla-ansible quickstart](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)
-*[http://www.panticz.de/openstack/octavia](http://www.panticz.de/openstack/octavia)
+* [Kolla-ansible quickstart](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)
+* [http://www.panticz.de/openstack/octavia](http://www.panticz.de/openstack/octavia)
