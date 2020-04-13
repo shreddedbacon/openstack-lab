@@ -90,7 +90,7 @@ You need to make sure that `10.10.10.0/24` can access `10.10.14.0/24` as this is
 Each node must be resolvable by its DNS name, so you can either run your own DNS server like this [https://hub.docker.com/r/doko89/technitium](https://hub.docker.com/r/doko89/technitium) or however you want to handle your DNS (if your router can do it, great)
 
 ### Switch configuration
-See [Dell PowerConnect 6248](switch-configs/dell-6248.md)
+See [Dell PowerConnect 6248](switch-config/dell-6248.md)
 
 ### Node Interfaces
 * `bond0` is the network used for everything except for external network and VLAN tenant traffic
