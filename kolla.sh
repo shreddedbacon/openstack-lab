@@ -15,7 +15,7 @@ kolla_ansible () {
     -v $(readlink -f $SSH_AUTH_SOCK):/ssh-agent \
     -e SSH_AUTH_SOCK=/ssh-agent \
     -v $(pwd)/kolla-ansible:/etc/kolla \
-    -it shreddedbacon/kolla-ansible kolla-ansible -i multinode --extra-vars=@overrides.yml $1
+    -it shreddedbacon/kolla-ansible kolla-ansible -i multinode --extra-vars=@overrides.yml $@
 }
 
 if [ "$1" == "genpwd" ]
@@ -25,5 +25,5 @@ elif [ "$1" == "build" ]
 then
 	build
 else
-	kolla_ansible $1
+	kolla_ansible $@
 fi
